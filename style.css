@@ -1,0 +1,80 @@
+body{
+  background: -webkit-linear-gradient(90deg, #ef7c8e,#d8a7b1,#fae8e0,#b5e2d3);
+  background: linear-gradient(90deg, #ef7c8e,#d8a7b1,#fae8e0,#b5e2d3);
+}
+
+.datepicker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.datepicker {
+  position: relative;
+  width: 300px;
+}
+
+.calendar {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e08acd;
+  border: 1px solid #300a1b;
+  padding: 10px;
+  z-index: 10;
+}
+
+.calendar.visible {
+  display: block;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #eebfebc2;
+  cursor: pointer;
+}
+
+.calendar th {
+  background-color: #efd8edd8;
+}
+
+.calendar td:hover {
+  background-color: #e0e0e0;
+}
+
+.calendar td.selected {
+  background-color: #eea6dd;
+}
+
+.year-selector {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year-selector label {
+  margin-right: 10px;
+}
+
+.year-selector input {
+  width: 60px;
+  margin-right: 10px;
+}
